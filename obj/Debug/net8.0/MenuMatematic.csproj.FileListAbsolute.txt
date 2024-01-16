@@ -1,0 +1,14 @@
+C:\Users\sergi\Git\MenuMatematic\bin\Debug\net8.0\MenuMatematic.exe
+C:\Users\sergi\Git\MenuMatematic\bin\Debug\net8.0\MenuMatematic.deps.json
+C:\Users\sergi\Git\MenuMatematic\bin\Debug\net8.0\MenuMatematic.runtimeconfig.json
+C:\Users\sergi\Git\MenuMatematic\bin\Debug\net8.0\MenuMatematic.dll
+C:\Users\sergi\Git\MenuMatematic\bin\Debug\net8.0\MenuMatematic.pdb
+C:\Users\sergi\Git\MenuMatematic\obj\Debug\net8.0\MenuMatematic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sergi\Git\MenuMatematic\obj\Debug\net8.0\MenuMatematic.AssemblyInfoInputs.cache
+C:\Users\sergi\Git\MenuMatematic\obj\Debug\net8.0\MenuMatematic.AssemblyInfo.cs
+C:\Users\sergi\Git\MenuMatematic\obj\Debug\net8.0\MenuMatematic.csproj.CoreCompileInputs.cache
+C:\Users\sergi\Git\MenuMatematic\obj\Debug\net8.0\MenuMatematic.dll
+C:\Users\sergi\Git\MenuMatematic\obj\Debug\net8.0\refint\MenuMatematic.dll
+C:\Users\sergi\Git\MenuMatematic\obj\Debug\net8.0\MenuMatematic.pdb
+C:\Users\sergi\Git\MenuMatematic\obj\Debug\net8.0\MenuMatematic.genruntimeconfig.cache
+C:\Users\sergi\Git\MenuMatematic\obj\Debug\net8.0\ref\MenuMatematic.dll
