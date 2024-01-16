@@ -5,7 +5,9 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Test1");
+            Console.WriteLine(Mcd(15,20));
 
+            MostrarDivisorMajor(52);
             Console.WriteLine(Factorial(5));
 
 
@@ -30,6 +32,19 @@
             }
 
         }
+        // Metode 2: Mcd
+        static int Mcd(int num1, int num2)
+        {
+            int aux;
+            if (num1 > num2) aux = num2;
+            else aux = num1;
+            int max = 1;
+            for (int i = 1; i <= aux; i++)
+            {
+                if (num1 % i == 0 && num2 % i == 0) max = i;
+            }
+            return max;
+        }
 
         // Mètode 4: Factorial
         static int Factorial(int num)
@@ -41,6 +56,18 @@
             }
             return factorial;
         }
+        //Metode 6: MostrarDivisorMajor
+        static void MostrarDivisorMajor(int num)
+        {
+            int i = num/2;
+            while(num % i != 0)
+            {
+                i--;
+            }
+            Console.WriteLine(i);
+        }
+
+
         // Metode 7: EsPrimer 
         static bool EsPrimer(int num)
         {

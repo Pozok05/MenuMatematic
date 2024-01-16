@@ -12,3 +12,4 @@ C:\Users\sergi\Git\MenuMatematic\obj\Debug\net8.0\refint\MenuMatematic.dll
 C:\Users\sergi\Git\MenuMatematic\obj\Debug\net8.0\MenuMatematic.pdb
 C:\Users\sergi\Git\MenuMatematic\obj\Debug\net8.0\MenuMatematic.genruntimeconfig.cache
 C:\Users\sergi\Git\MenuMatematic\obj\Debug\net8.0\ref\MenuMatematic.dll
+C:\Users\sergi\Git\MenuMatematic\obj\Debug\net8.0\MenuMatematic.sourcelink.json
