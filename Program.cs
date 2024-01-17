@@ -16,7 +16,9 @@
             int a = 9, b = 10;
             Maxim(ref a, ref b);
             Console.WriteLine("test Major a:" + a + " b:" + b);
-
+            Console.WriteLine("test Combinatori:" + Combinatori(8, 3));
+            Console.WriteLine($"test NPrimersPrimers {NPrimersPrimers(5)}");
+            Console.WriteLine($"prova mcm {Mcm(12, 26)}");
         }
 
         // Mètode 1: Maxim
@@ -46,6 +48,14 @@
             return max;
         }
 
+        // Mètode 3: Mcm
+        static int Mcm(int num1, int num2)
+        {
+            int mcd = Mcd(num1, num2), mcm;
+            mcm = (num1 * num2) / mcd;
+            return mcm;
+        }
+
         // Mètode 4: Factorial
         static int Factorial(int num)
         {
@@ -56,7 +66,22 @@
             }
             return factorial;
         }
-        //Metode 6: MostrarDivisorMajor
+
+
+        // Mètode 5: Combinatori
+        static int Combinatori(int num1, int num2)
+        {
+            int numerador=1, combinatori, i = 0;
+            while (i < num2)
+            {
+                numerador *= num1;
+                num1--;
+                i++;
+            }
+            combinatori = numerador / Factorial(num2);
+            return combinatori;
+        }
+        // Mètode 6: MostrarDivisorMajor
         static void MostrarDivisorMajor(int num)
         {
             int i = num/2;
@@ -68,7 +93,7 @@
         }
 
 
-        // Metode 7: EsPrimer 
+        // Mètode 7: EsPrimer 
         static bool EsPrimer(int num)
         {
             int i = 2;
@@ -83,8 +108,23 @@
 
         }
 
-
-
+        // Mètode 8: NPrimersPrimers
+        static string NPrimersPrimers(int quant)
+        {
+            int i = 0, num = 1;
+            string nPrimersPrimers = "";
+            while (i < quant)
+            {
+                if (EsPrimer(num))
+                {
+                    i++;
+                    nPrimersPrimers += $"{num}, ";
+                }
+                num++;
+            }
+            nPrimersPrimers = nPrimersPrimers.Remove(nPrimersPrimers.Length - 2, 2);
+            return nPrimersPrimers;
+        }
 
 
 
