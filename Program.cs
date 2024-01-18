@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            int a, b;
+            
             // MENÚ -> OPCIÓ -> MÈTODE -> OPCIÓ -> MENÚ
             char opcio = '0';
             while (opcio != 'q' && opcio != 'Q') 
@@ -17,72 +17,8 @@
                 }
                 while (!ValidarOpcio(opcio));
                 Console.Clear() ;
-                switch (opcio)
-                {
-                    case '1':
-                        //Maxim
-                        a = DemanarValor();
-                        b = DemanarValor();
-                        Maxim(ref a, ref b);
-                        Console.WriteLine($"El valor més gran és {a}");
-                        PremPerContinuar();
-                        break;
-
-                    case '2':
-                        //Mcd
-                        a = DemanarValor();
-                        b = DemanarValor();
-                        Console.WriteLine($"El Màxim Comú Divisor entre els dos valor és {Mcd(a, b)}");
-                        PremPerContinuar();
-                        break;
-
-                    case '3':
-                        //Mcm
-                        a = DemanarValor();
-                        b = DemanarValor();
-                        Console.WriteLine($"El Mínim Comú Múltiple entre els dos valor és {Mcm(a, b)}");
-                        PremPerContinuar();
-                        break;
-
-                    case '4':
-                        //Factorial
-                        a = DemanarValor();
-                        Console.WriteLine($"El Factorial de {a} és {Factorial(a)}");
-                        PremPerContinuar();
-                        break;
-
-                    case '5':
-                        //Combinatori
-                        a = DemanarValor();
-                        b = DemanarValor();
-                        Console.WriteLine($"El Combinatori entre els dos valors introduïts és {Combinatori(a, b)}");
-                        PremPerContinuar();
-                        break;
-
-                    case '6':
-                        //MostrarDivisorMajor
-                        a = DemanarValor();
-                        Console.Write($"El divisor major de {a} és ");
-                        MostrarDivisorMajor(a);
-                        PremPerContinuar();
-                        break;
-
-                    case '7':
-                        //EsPrimer
-                        a = DemanarValor();
-                        if (EsPrimer(a)) Console.WriteLine($"{a} és un número primer");
-                        else Console.WriteLine($"{a} no és un número primer");
-                        PremPerContinuar();
-                        break;
-
-                    case '8':
-                        //NPrimersPrimers
-                        a = DemanarValor();
-                        Console.Write($"Els {a} primers números primers són ");
-                        Console.WriteLine(NPrimersPrimers(a));
-                        PremPerContinuar();
-                        break;
-                }
+                MostrarOpcio(opcio);
+                
             }
             
         }
@@ -110,6 +46,79 @@
                $"\n\n" + "Prem el botó per seleccionar la opció desitjada";
 
             return menu;
+        }
+
+        // Mètode MostrarOpcio
+        static void MostrarOpcio(int opcio)
+        {
+            int a, b;
+            switch (opcio)
+            {
+                case '1':
+                    //Maxim
+                    Console.WriteLine(" ");
+                    a = DemanarValor();
+                    b = DemanarValor();
+                    Maxim(ref a, ref b);
+                    Console.WriteLine($"El valor més gran és {a}");
+                    PremPerContinuar();
+                    break;
+
+                case '2':
+                    //Mcd
+                    a = DemanarValor();
+                    b = DemanarValor();
+                    Console.WriteLine($"El Màxim Comú Divisor entre els dos valor és {Mcd(a, b)}");
+                    PremPerContinuar();
+                    break;
+
+                case '3':
+                    //Mcm
+                    a = DemanarValor();
+                    b = DemanarValor();
+                    Console.WriteLine($"El Mínim Comú Múltiple entre els dos valor és {Mcm(a, b)}");
+                    PremPerContinuar();
+                    break;
+
+                case '4':
+                    //Factorial
+                    a = DemanarValor();
+                    Console.WriteLine($"El Factorial de {a} és {Factorial(a)}");
+                    PremPerContinuar();
+                    break;
+
+                case '5':
+                    //Combinatori
+                    a = DemanarValor();
+                    b = DemanarValor();
+                    Console.WriteLine($"El Combinatori entre els dos valors introduïts és {Combinatori(a, b)}");
+                    PremPerContinuar();
+                    break;
+
+                case '6':
+                    //MostrarDivisorMajor
+                    a = DemanarValor();
+                    Console.Write($"El divisor major de {a} és ");
+                    MostrarDivisorMajor(a);
+                    PremPerContinuar();
+                    break;
+
+                case '7':
+                    //EsPrimer
+                    a = DemanarValor();
+                    if (EsPrimer(a)) Console.WriteLine($"{a} és un número primer");
+                    else Console.WriteLine($"{a} no és un número primer");
+                    PremPerContinuar();
+                    break;
+
+                case '8':
+                    //NPrimersPrimers
+                    a = DemanarValor();
+                    Console.Write($"Els {a} primers números primers són ");
+                    Console.WriteLine(NPrimersPrimers(a));
+                    PremPerContinuar();
+                    break;
+            }
         }
 
         // Mètode PremPerContinuar

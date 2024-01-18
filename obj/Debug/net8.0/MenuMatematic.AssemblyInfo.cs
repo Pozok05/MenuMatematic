@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MenuMatematic")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49c86cd214ea3ba48e7861a51363e30ca141b509")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f4665f399d81c09c6f0c0c6971e1525b23b331f")]
 [assembly: System.Reflection.AssemblyProductAttribute("MenuMatematic")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MenuMatematic")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
