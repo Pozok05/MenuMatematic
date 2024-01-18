@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\sergi\\.nuget\\packages\\": {}
+    "C:\\Users\\Roger\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sergi\\Git\\MenuMatematic\\MenuMatematic.csproj",
+      "projectUniqueName": "C:\\Users\\Roger\\OneDrive\\Desktop\\DAW 1r\\M05 - Entorns\\MenuMatematic\\MenuMatematic.csproj",
       "projectName": "MenuMatematic",
-      "projectPath": "C:\\Users\\sergi\\Git\\MenuMatematic\\MenuMatematic.csproj",
-      "packagesPath": "C:\\Users\\sergi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sergi\\Git\\MenuMatematic\\obj\\",
+      "projectPath": "C:\\Users\\Roger\\OneDrive\\Desktop\\DAW 1r\\M05 - Entorns\\MenuMatematic\\MenuMatematic.csproj",
+      "packagesPath": "C:\\Users\\Roger\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Roger\\OneDrive\\Desktop\\DAW 1r\\M05 - Entorns\\MenuMatematic\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\sergi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Roger\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

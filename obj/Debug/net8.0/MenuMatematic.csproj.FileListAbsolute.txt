@@ -13,3 +13,18 @@ C:\Users\sergi\Git\MenuMatematic\obj\Debug\net8.0\MenuMatematic.pdb
 C:\Users\sergi\Git\MenuMatematic\obj\Debug\net8.0\MenuMatematic.genruntimeconfig.cache
 C:\Users\sergi\Git\MenuMatematic\obj\Debug\net8.0\ref\MenuMatematic.dll
 C:\Users\sergi\Git\MenuMatematic\obj\Debug\net8.0\MenuMatematic.sourcelink.json
+C:\Users\Roger\OneDrive\Desktop\DAW 1r\M05 - Entorns\MenuMatematic\bin\Debug\net8.0\MenuMatematic.exe
+C:\Users\Roger\OneDrive\Desktop\DAW 1r\M05 - Entorns\MenuMatematic\bin\Debug\net8.0\MenuMatematic.deps.json
+C:\Users\Roger\OneDrive\Desktop\DAW 1r\M05 - Entorns\MenuMatematic\bin\Debug\net8.0\MenuMatematic.runtimeconfig.json
+C:\Users\Roger\OneDrive\Desktop\DAW 1r\M05 - Entorns\MenuMatematic\bin\Debug\net8.0\MenuMatematic.dll
+C:\Users\Roger\OneDrive\Desktop\DAW 1r\M05 - Entorns\MenuMatematic\bin\Debug\net8.0\MenuMatematic.pdb
+C:\Users\Roger\OneDrive\Desktop\DAW 1r\M05 - Entorns\MenuMatematic\obj\Debug\net8.0\MenuMatematic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Roger\OneDrive\Desktop\DAW 1r\M05 - Entorns\MenuMatematic\obj\Debug\net8.0\MenuMatematic.AssemblyInfoInputs.cache
+C:\Users\Roger\OneDrive\Desktop\DAW 1r\M05 - Entorns\MenuMatematic\obj\Debug\net8.0\MenuMatematic.AssemblyInfo.cs
+C:\Users\Roger\OneDrive\Desktop\DAW 1r\M05 - Entorns\MenuMatematic\obj\Debug\net8.0\MenuMatematic.csproj.CoreCompileInputs.cache
+C:\Users\Roger\OneDrive\Desktop\DAW 1r\M05 - Entorns\MenuMatematic\obj\Debug\net8.0\MenuMatematic.sourcelink.json
+C:\Users\Roger\OneDrive\Desktop\DAW 1r\M05 - Entorns\MenuMatematic\obj\Debug\net8.0\MenuMatematic.dll
+C:\Users\Roger\OneDrive\Desktop\DAW 1r\M05 - Entorns\MenuMatematic\obj\Debug\net8.0\refint\MenuMatematic.dll
+C:\Users\Roger\OneDrive\Desktop\DAW 1r\M05 - Entorns\MenuMatematic\obj\Debug\net8.0\MenuMatematic.pdb
+C:\Users\Roger\OneDrive\Desktop\DAW 1r\M05 - Entorns\MenuMatematic\obj\Debug\net8.0\MenuMatematic.genruntimeconfig.cache
+C:\Users\Roger\OneDrive\Desktop\DAW 1r\M05 - Entorns\MenuMatematic\obj\Debug\net8.0\ref\MenuMatematic.dll
