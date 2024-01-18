@@ -56,6 +56,7 @@
             string menu;
 
             menu =
+<<<<<<< HEAD
                $"+--------------------------------+ \n" +
                $"|       MENÚ MATEMÀTIC           | \n" +
                $"+--------------------------------+ \n" +
@@ -70,6 +71,23 @@
                $"|  q - exit                      | \n" +
                $"+--------------------------------+" +
                $"\n\n" + "Prem el botó per seleccionar la opció desitjada: ";
+=======
+                $" \n \n " +
+               $"\t\t\t\t\t ╔════════════════════════════════╗ \n" +
+               $"\t\t\t\t\t ║       MENÚ MATEMÀTIC           ║ \n" +
+               $"\t\t\t\t\t ╠════════════════════════════════╣ \n" +
+               $"\t\t\t\t\t ║  1 - Calcular valor més gran   ║ \n" +
+               $"\t\t\t\t\t ║  2 - Màxim Comú Divisor        ║ \n" +
+               $"\t\t\t\t\t ║  3 - Mínim Comú Múltiple       ║ \n" +
+               $"\t\t\t\t\t ║  4 - Calcular Factorial        ║ \n" +
+               $"\t\t\t\t\t ║  5 - Calcular Combinatori      ║ \n" +
+               $"\t\t\t\t\t ║  6 - Calcular Divisor Major    ║ \n" +
+               $"\t\t\t\t\t ║  7 - És un número Primer?      ║ \n" +
+               $"\t\t\t\t\t ║  8 - Nombre de números Primers ║ \n" +
+               $"\t\t\t\t\t ║  q - exit                      ║ \n" +
+               $"\t\t\t\t\t ╚════════════════════════════════╝" +
+               $"\n\n" + "Prem el botó per seleccionar la opció desitjada";
+>>>>>>> bd41d70f2d8cd52e2a461debcbd7f6d7e165761b
 
             return menu;
         }
