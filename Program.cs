@@ -4,7 +4,10 @@
     {
         static void Main(string[] args)
         {
+           
             Console.Write(Menu());
+            
+
         }
         // Mètode MENU
         static string Menu()
@@ -26,7 +29,7 @@
                $"\t\t\t\t\t ║  8 - Nombre de números Primers ║ \n" +
                $"\t\t\t\t\t ║  q - exit                      ║ \n" +
                $"\t\t\t\t\t ╚════════════════════════════════╝" +
-               $"\n\n" + "Prem el botó per seleccionar la opció desitjada";
+               $"\n\n" + "Prem el botó per seleccionar la opció desitjada" + "✌";
 
             return menu;
         }
