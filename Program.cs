@@ -4,13 +4,10 @@
     {
         static void Main(string[] args)
         {
-<<<<<<< HEAD
            
             Console.Write(Menu());
             
 
-=======
->>>>>>> 74c6ed42507f6c6b52a120854f96705f4c691b48
             
             // MENÚ -> OPCIÓ -> MÈTODE -> OPCIÓ -> MENÚ
             char opcio = '0';
@@ -36,7 +33,7 @@
 
             menu =
 
-               $" \n \n " +
+               $"\n " +
                $"\t\t\t\t\t ╔════════════════════════════════╗ \n" +
                $"\t\t\t\t\t ║       MENÚ MATEMÀTIC           ║ \n" +
                $"\t\t\t\t\t ╠════════════════════════════════╣ \n" +
@@ -50,7 +47,7 @@
                $"\t\t\t\t\t ║  8 - Nombre de números Primers ║ \n" +
                $"\t\t\t\t\t ║  q - exit                      ║ \n" +
                $"\t\t\t\t\t ╚════════════════════════════════╝" +
-               $"\n\n" + "Prem el botó per seleccionar la opció desitjada" + "✌";
+               $"\n\n" + "\t\t\tPrem la tecla corresponent per seleccionar la opció desitjada:";
 
             return menu;
         }
@@ -63,80 +60,81 @@
             {
                 case '1':
                     //Maxim
-                    Console.WriteLine("MÀXIM");
-                    Console.WriteLine("Retorna el maxim dels dos numeros.");
+                    Console.WriteLine("\n\t-----MÀXIM-----");
+                    Console.WriteLine("\t*Retorna el maxim dels dos numeros.\n");
                     a = DemanarValor();
                     b = DemanarValor();
                     Maxim(ref a, ref b);
-                    Console.WriteLine($"El valor més gran és {a}");
+                    Console.WriteLine($"\n\tEl valor més gran és {a}");
                     PremPerContinuar();
                     break;
 
                 case '2':
                     //Mcd
-                    Console.WriteLine("MCD");
-                    Console.WriteLine("Calcula el minim comú divisor a partir de dos valors entrats per consola.");
+                    Console.WriteLine("\n\t-----MCD-----");
+                    Console.WriteLine("\tCalcula el minim comú divisor a partir de dos valors entrats per consola.\n");
                     a = DemanarValor();
                     b = DemanarValor();
-                    Console.WriteLine($"El Màxim Comú Divisor entre els dos valor és {Mcd(a, b)}");
+                    Console.WriteLine($"\n\tEl Màxim Comú Divisor entre els dos valor és {Mcd(a, b)}");
                     PremPerContinuar();
                     break;
 
                 case '3':
                     //Mcm
-                    Console.WriteLine("MCM");
-                    Console.WriteLine("Calcula el Maxim Comú Multiple a partir de dos valors entrats per consola.");
+                    Console.WriteLine("\n\t-----MCM-----");
+                    Console.WriteLine("\tCalcula el Maxim Comú Multiple a partir de dos valors entrats per consola.\n");
                     a = DemanarValor();
                     b = DemanarValor();
-                    Console.WriteLine($"El Mínim Comú Múltiple entre els dos valor és {Mcm(a, b)}");
+                    Console.WriteLine($"\n\tEl Mínim Comú Múltiple entre els dos valor és {Mcm(a, b)}");
                     PremPerContinuar();
                     break;
 
                 case '4':
                     //Factorial
-                    Console.WriteLine("FACTORIAL");
-                    Console.WriteLine("Calcula el Facorial a partir d'un valor entrar per consola.");
+                    Console.WriteLine("\n\t-----FACTORIAL-----");
+                    Console.WriteLine("\tCalcula el Facorial a partir d'un valor entrar per consola.\n");
                     a = DemanarValor();
-                    Console.WriteLine($"El Factorial de {a} és {Factorial(a)}");
+                    Console.WriteLine($"\n\tEl Factorial de {a} és {Factorial(a)}");
                     PremPerContinuar();
                     break;
 
                 case '5':
                     //Combinatori
-                    Console.WriteLine($"COMBINATORI");
-                    Console.WriteLine($"El programa calcularà el Combinatori entre els dos valors introduïts. Es calcularà el combinatori del valor més gran sobre el més petit.");
+                    Console.WriteLine($"\n\t-----COMBINATORI-----");
+                    Console.WriteLine($"\tEl programa calcularà el Combinatori entre els dos valors introduïts. " +
+                        $"\n\tEs calcularà el combinatori del valor més gran sobre el més petit.\n");
                     a = DemanarValor();
                     b = DemanarValor();
-                    Console.WriteLine($"El Combinatori entre els dos valors introduïts és {Combinatori(a, b)}");
+                    Console.WriteLine($"\n\tEl Combinatori entre els dos valors introduïts és {Combinatori(a, b)}");
                     PremPerContinuar();
                     break;
 
                 case '6':
                     //MostrarDivisorMajor
-                    Console.WriteLine($"MOSTRAR EL DIVISOR MAJOR");
-                    Console.WriteLine($"Es mostrarà per pantalla el divisor major del valor introduït.");
+                    Console.WriteLine($"\n\t-----MOSTRAR EL DIVISOR MAJOR-----");
+                    Console.WriteLine($"\tEs mostrarà per pantalla el divisor major del valor introduït.\n");
                     a = DemanarValor();
-                    Console.Write($"El divisor major de {a} és ");
+                    Console.Write($"\n\tEl divisor major de {a} és ");
                     MostrarDivisorMajor(a);
                     PremPerContinuar();
                     break;
 
                 case '7':
                     //EsPrimer
-                    Console.WriteLine($"ÉS UN NÚMERO PRIMER??");
-                    Console.WriteLine($"El programa dirà si el valor introduït és un NÚMERO PRIMER o no.");
+                    Console.WriteLine($"\n\t-----ÉS UN NÚMERO PRIMER?-----");
+                    Console.WriteLine($"\tEl programa dirà si el valor introduït és un NÚMERO PRIMER o no.\n");
                     a = DemanarValor();
-                    if (EsPrimer(a)) Console.WriteLine($"{a} és un número primer");
-                    else Console.WriteLine($"{a} no és un número primer");
+                    if (EsPrimer(a)) Console.WriteLine($"\n\t{a} és un número primer");
+                    else Console.WriteLine($"\n\t{a} no és un número primer");
                     PremPerContinuar();
                     break;
 
                 case '8':
                     //NPrimersPrimers
-                    Console.WriteLine($"NÓMBRE DE NÚMEROS PRIMERS");
-                    Console.WriteLine($"El valor introduït són els 'x' primers NÚMEROS PRIMERS que vols mostrar per pantalla.");
+                    Console.WriteLine($"\n\t-----NÓMBRE DE NÚMEROS PRIMERS-----");
+                    Console.WriteLine($"\tEl valor introduït són els 'x' primers NÚMEROS PRIMERS que vols mostrar per pantalla.\n");
                     a = DemanarValor();
-                    Console.Write($"Els {a} primers números primers són ");
+                    Console.Write($"\n\tEls {a} primers números primers són ");
                     Console.WriteLine(NPrimersPrimers(a));
                     PremPerContinuar();
                     break;
@@ -146,8 +144,8 @@
         // Mètode PremPerContinuar
         static void PremPerContinuar()
         {
-            Console.WriteLine($"\n\n-----------------------------------------");
-            Console.WriteLine($"Prem qualsevol botó per tornar al menú...");
+            Console.WriteLine($"\n\n\t-----------------------------------------");
+            Console.WriteLine($"\tPrem qualsevol botó per tornar al menú...");
             char continuar = Console.ReadKey().KeyChar;
         }
 
@@ -164,7 +162,8 @@
             int valor=-1;
             while(valor < 0)
             {
-                Console.WriteLine("Introdueix el valor desitjat");
+                Console.WriteLine("\tIntrodueix el valor desitjat");
+                Console.Write("\t");
                 valor = Convert.ToInt32(Console.ReadLine());
             }
             
