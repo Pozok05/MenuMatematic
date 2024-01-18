@@ -4,22 +4,36 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Test1");
-            Console.WriteLine(Mcd(15,20));
-
-            MostrarDivisorMajor(52);
-            Console.WriteLine(Factorial(5));
-
-
-            Console.WriteLine(EsPrimer(8));
-
-            int a = 9, b = 10;
-            Maxim(ref a, ref b);
-            Console.WriteLine("test Major a:" + a + " b:" + b);
-            Console.WriteLine("test Combinatori:" + Combinatori(8, 3));
-            Console.WriteLine($"test NPrimersPrimers {NPrimersPrimers(5)}");
-            Console.WriteLine($"prova mcm {Mcm(12, 26)}");
+            Console.Write(Menu());
         }
+        // Mètode MENU
+        static string Menu()
+        {
+            string menu;
+
+            menu =
+               $"+--------------------------------+ \n" +
+               $"|       MENÚ MATEMÀTIC           | \n" +
+               $"+--------------------------------+ \n" +
+               $"|  1 - Calcular valor més gran   | \n" +
+               $"|  2 - Màxim Comú Divisor        | \n" +
+               $"|  3 - Mínim Comú Múltiple       | \n" +
+               $"|  4 - Calcular Factorial        | \n" +
+               $"|  5 - Calcular Combinatori      | \n" +
+               $"|  6 - Calcular Divisor Major    | \n" +
+               $"|  7 - És un número Primer?      | \n" +
+               $"|  8 - Nombre de números Primers | \n" +
+               $"|  q - exit                      | \n" +
+               $"+--------------------------------+" +
+               $" _  _\r\n      (_\\/_)\r\n     (_>()<_)\r\n      (_/\\_)\r\n        ||\r\n      |\\||/|\r\n     __\\||/__ \\`\"-. \r\n        )  _`-. \r\n       ,  : `. \\ \r\n       : _   '  \\ \r\n       ; *` _.   `--._ \r\n       `-.-'          `-. \r\n         |       `       `. \r\n         :.       .        \\ \r\n         | \\  .   :   .-'   . \r\n         :  )-.;  ;  /      : \r\n         :  ;  | :  :       ;-. \r\n         ; /   : |`-:     _ `- ) \r\n      ,-' /  ,-' ; .-`- .' `--' \r\n      `--'   `---' `---' " +
+               $"\n\n" + "Prem el botó per seleccionar la opció desitjada";
+
+            return menu;
+        }
+
+
+
+
 
         // Mètode 1: Maxim
         static void Maxim(ref int num1, ref int num2)
