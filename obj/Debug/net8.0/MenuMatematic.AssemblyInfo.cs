@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MenuMatematic")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd41d70f2d8cd52e2a461debcbd7f6d7e165761b")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f4665f399d81c09c6f0c0c6971e1525b23b331f")]
->>>>>>> Pozok
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+718ebbb2eff46439c13873b50cfb41ebffd6eb37")]
 [assembly: System.Reflection.AssemblyProductAttribute("MenuMatematic")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MenuMatematic")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

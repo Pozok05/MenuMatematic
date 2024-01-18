@@ -4,12 +4,6 @@
     {
         static void Main(string[] args)
         {
-<<<<<<< HEAD
-           
-            Console.Write(Menu());
-            
-
-=======
             
             // MENÚ -> OPCIÓ -> MÈTODE -> OPCIÓ -> MENÚ
             char opcio = '0';
@@ -27,7 +21,6 @@
                 
             }
             
->>>>>>> Pozok
         }
         // Mètode MENU
         static string Menu()
@@ -63,7 +56,8 @@
             {
                 case '1':
                     //Maxim
-                    Console.WriteLine(" ");
+                    Console.WriteLine("MÀXIM");
+                    Console.WriteLine("Retorna el maxim dels dos numeros.");
                     a = DemanarValor();
                     b = DemanarValor();
                     Maxim(ref a, ref b);
@@ -73,6 +67,8 @@
 
                 case '2':
                     //Mcd
+                    Console.WriteLine("MCD");
+                    Console.WriteLine("Calcula el minim comú divisor a partir de dos valors entrats per consola.");
                     a = DemanarValor();
                     b = DemanarValor();
                     Console.WriteLine($"El Màxim Comú Divisor entre els dos valor és {Mcd(a, b)}");
@@ -81,6 +77,8 @@
 
                 case '3':
                     //Mcm
+                    Console.WriteLine("MCM");
+                    Console.WriteLine("Calcula el Maxim Comú Multiple a partir de dos valors entrats per consola.");
                     a = DemanarValor();
                     b = DemanarValor();
                     Console.WriteLine($"El Mínim Comú Múltiple entre els dos valor és {Mcm(a, b)}");
@@ -89,6 +87,8 @@
 
                 case '4':
                     //Factorial
+                    Console.WriteLine("FACTORIAL");
+                    Console.WriteLine("Calcula el Facorial a partir d'un valor entrar per consola.");
                     a = DemanarValor();
                     Console.WriteLine($"El Factorial de {a} és {Factorial(a)}");
                     PremPerContinuar();
@@ -146,10 +146,13 @@
         // Mètode DemanarValor
         static int DemanarValor()
         {
-            int valor=0;
-            string s;
-            Console.WriteLine("Introdueix el valor desitjat");
-            valor = Convert.ToInt32(Console.ReadLine());
+            int valor=-1;
+            while(valor < 0)
+            {
+                Console.WriteLine("Introdueix el valor desitjat");
+                valor = Convert.ToInt32(Console.ReadLine());
+            }
+            
             return valor;
         }
 
