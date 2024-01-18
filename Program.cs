@@ -4,7 +4,51 @@
     {
         static void Main(string[] args)
         {
-            Console.Write(Menu());
+            // MENÚ -> OPCIÓ -> MÈTODE -> OPCIÓ -> MENÚ
+            char opcio = '0';
+            while (opcio != 'q' && opcio != 'Q') 
+            {
+                do
+                {
+                    Console.Clear();
+                    Console.Write(Menu());
+                    opcio = (char)Console.Read();
+                }
+                while (!ValidarOpcio(opcio));
+                Console.Clear() ;
+                switch (opcio)
+                {
+                    case '1':
+                        //Maxim
+                        int a = DemanarValor();
+                        int b = DemanarValor();
+                        Maxim(ref a, ref b);
+                        Console.WriteLine($"El valor més gran és {a}");
+                        break;
+                    case '2':
+                        //Mcd
+                        break;
+                    case '3':
+                        //Mcm
+                        break;
+                    case '4':
+                        //Factorial
+                        break;
+                    case '5':
+                        //Combinatori
+                        break;
+                    case '6':
+                        //MostrarDivisorMajor
+                        break;
+                    case '7':
+                        //EsPrimer
+                        break;
+                    case '8':
+                        //NPrimersPrimers
+                        break;
+                }
+            }
+            
         }
         // Mètode MENU
         static string Menu()
@@ -25,15 +69,26 @@
                $"|  8 - Nombre de números Primers | \n" +
                $"|  q - exit                      | \n" +
                $"+--------------------------------+" +
-               $" _  _\r\n      (_\\/_)\r\n     (_>()<_)\r\n      (_/\\_)\r\n        ||\r\n      |\\||/|\r\n     __\\||/__ \\`\"-. \r\n        )  _`-. \r\n       ,  : `. \\ \r\n       : _   '  \\ \r\n       ; *` _.   `--._ \r\n       `-.-'          `-. \r\n         |       `       `. \r\n         :.       .        \\ \r\n         | \\  .   :   .-'   . \r\n         :  )-.;  ;  /      : \r\n         :  ;  | :  :       ;-. \r\n         ; /   : |`-:     _ `- ) \r\n      ,-' /  ,-' ; .-`- .' `--' \r\n      `--'   `---' `---' " +
-               $"\n\n" + "Prem el botó per seleccionar la opció desitjada";
+               $"\n\n" + "Prem el botó per seleccionar la opció desitjada: ";
 
             return menu;
         }
 
 
+        // Mètode ValidarOpció
+        static bool ValidarOpcio(char lletra)
+        {
+            return (lletra > '0' && lletra < '9' || lletra == 'q' || lletra == 'Q');
+        }
 
-
+        // Mètode DemanarValor
+        static int DemanarValor()
+        {
+            int valor;
+            Console.WriteLine("Introdueix el valor desitjat");
+            valor = Convert.ToInt32(Console.ReadLine());
+            return valor;
+        }
 
         // Mètode 1: Maxim
         static void Maxim(ref int num1, ref int num2)
