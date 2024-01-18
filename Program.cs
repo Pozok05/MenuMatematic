@@ -4,12 +4,10 @@
     {
         static void Main(string[] args)
         {
-<<<<<<< HEAD
            
             Console.Write(Menu());
             
 
-=======
             
             // MENÚ -> OPCIÓ -> MÈTODE -> OPCIÓ -> MENÚ
             char opcio = '0';
@@ -27,7 +25,6 @@
                 
             }
             
->>>>>>> Pozok
         }
         // Mètode MENU
         static string Menu()
@@ -96,6 +93,8 @@
 
                 case '5':
                     //Combinatori
+                    Console.WriteLine($"COMBINATORI");
+                    Console.WriteLine($"El programa calcularà el Combinatori entre els dos valors introduïts. Es calcularà el combinatori del valor més gran sobre el més petit.");
                     a = DemanarValor();
                     b = DemanarValor();
                     Console.WriteLine($"El Combinatori entre els dos valors introduïts és {Combinatori(a, b)}");
@@ -104,6 +103,8 @@
 
                 case '6':
                     //MostrarDivisorMajor
+                    Console.WriteLine($"MOSTRAR EL DIVISOR MAJOR");
+                    Console.WriteLine($"Es mostrarà per pantalla el divisor major del valor introduït.");
                     a = DemanarValor();
                     Console.Write($"El divisor major de {a} és ");
                     MostrarDivisorMajor(a);
@@ -112,6 +113,8 @@
 
                 case '7':
                     //EsPrimer
+                    Console.WriteLine($"ÉS UN NÚMERO PRIMER??");
+                    Console.WriteLine($"El programa dirà si el valor introduït és un NÚMERO PRIMER o no.");
                     a = DemanarValor();
                     if (EsPrimer(a)) Console.WriteLine($"{a} és un número primer");
                     else Console.WriteLine($"{a} no és un número primer");
@@ -120,6 +123,8 @@
 
                 case '8':
                     //NPrimersPrimers
+                    Console.WriteLine($"NÓMBRE DE NÚMEROS PRIMERS");
+                    Console.WriteLine($"El valor introduït són els 'x' primers NÚMEROS PRIMERS que vols mostrar per pantalla.");
                     a = DemanarValor();
                     Console.Write($"Els {a} primers números primers són ");
                     Console.WriteLine(NPrimersPrimers(a));
@@ -203,6 +208,7 @@
         // Mètode 5: Combinatori
         static int Combinatori(int num1, int num2)
         {
+            Maxim(ref num1, ref num2);
             int numerador=1, combinatori, i = 0;
             while (i < num2)
             {
