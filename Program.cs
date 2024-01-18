@@ -25,24 +25,31 @@
                         Maxim(ref a, ref b);
                         Console.WriteLine($"El valor més gran és {a}");
                         break;
+
                     case '2':
                         //Mcd
                         break;
+
                     case '3':
                         //Mcm
                         break;
+
                     case '4':
                         //Factorial
                         break;
+
                     case '5':
                         //Combinatori
                         break;
+
                     case '6':
                         //MostrarDivisorMajor
                         break;
+
                     case '7':
                         //EsPrimer
                         break;
+
                     case '8':
                         //NPrimersPrimers
                         break;
@@ -56,23 +63,8 @@
             string menu;
 
             menu =
-<<<<<<< HEAD
-               $"+--------------------------------+ \n" +
-               $"|       MENÚ MATEMÀTIC           | \n" +
-               $"+--------------------------------+ \n" +
-               $"|  1 - Calcular valor més gran   | \n" +
-               $"|  2 - Màxim Comú Divisor        | \n" +
-               $"|  3 - Mínim Comú Múltiple       | \n" +
-               $"|  4 - Calcular Factorial        | \n" +
-               $"|  5 - Calcular Combinatori      | \n" +
-               $"|  6 - Calcular Divisor Major    | \n" +
-               $"|  7 - És un número Primer?      | \n" +
-               $"|  8 - Nombre de números Primers | \n" +
-               $"|  q - exit                      | \n" +
-               $"+--------------------------------+" +
-               $"\n\n" + "Prem el botó per seleccionar la opció desitjada: ";
-=======
-                $" \n \n " +
+
+               $" \n \n " +
                $"\t\t\t\t\t ╔════════════════════════════════╗ \n" +
                $"\t\t\t\t\t ║       MENÚ MATEMÀTIC           ║ \n" +
                $"\t\t\t\t\t ╠════════════════════════════════╣ \n" +
@@ -87,7 +79,6 @@
                $"\t\t\t\t\t ║  q - exit                      ║ \n" +
                $"\t\t\t\t\t ╚════════════════════════════════╝" +
                $"\n\n" + "Prem el botó per seleccionar la opció desitjada";
->>>>>>> bd41d70f2d8cd52e2a461debcbd7f6d7e165761b
 
             return menu;
         }
@@ -103,7 +94,7 @@
         static int DemanarValor()
         {
             int valor;
-            Console.WriteLine("Introdueix el valor desitjat");
+            Console.WriteLine("Quants números primers vols que et digui?");
             valor = Convert.ToInt32(Console.ReadLine());
             return valor;
         }
