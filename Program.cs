@@ -12,20 +12,20 @@
             string menu;
 
             menu =
-               $"+--------------------------------+ \n" +
-               $"|       MENÚ MATEMÀTIC           | \n" +
-               $"+--------------------------------+ \n" +
-               $"|  1 - Calcular valor més gran   | \n" +
-               $"|  2 - Màxim Comú Divisor        | \n" +
-               $"|  3 - Mínim Comú Múltiple       | \n" +
-               $"|  4 - Calcular Factorial        | \n" +
-               $"|  5 - Calcular Combinatori      | \n" +
-               $"|  6 - Calcular Divisor Major    | \n" +
-               $"|  7 - És un número Primer?      | \n" +
-               $"|  8 - Nombre de números Primers | \n" +
-               $"|  q - exit                      | \n" +
-               $"+--------------------------------+" +
-               $" _  _\r\n      (_\\/_)\r\n     (_>()<_)\r\n      (_/\\_)\r\n        ||\r\n      |\\||/|\r\n     __\\||/__ \\`\"-. \r\n        )  _`-. \r\n       ,  : `. \\ \r\n       : _   '  \\ \r\n       ; *` _.   `--._ \r\n       `-.-'          `-. \r\n         |       `       `. \r\n         :.       .        \\ \r\n         | \\  .   :   .-'   . \r\n         :  )-.;  ;  /      : \r\n         :  ;  | :  :       ;-. \r\n         ; /   : |`-:     _ `- ) \r\n      ,-' /  ,-' ; .-`- .' `--' \r\n      `--'   `---' `---' " +
+                $" \n \n " +
+               $"\t\t\t\t\t ╔════════════════════════════════╗ \n" +
+               $"\t\t\t\t\t ║       MENÚ MATEMÀTIC           ║ \n" +
+               $"\t\t\t\t\t ╠════════════════════════════════╣ \n" +
+               $"\t\t\t\t\t ║  1 - Calcular valor més gran   ║ \n" +
+               $"\t\t\t\t\t ║  2 - Màxim Comú Divisor        ║ \n" +
+               $"\t\t\t\t\t ║  3 - Mínim Comú Múltiple       ║ \n" +
+               $"\t\t\t\t\t ║  4 - Calcular Factorial        ║ \n" +
+               $"\t\t\t\t\t ║  5 - Calcular Combinatori      ║ \n" +
+               $"\t\t\t\t\t ║  6 - Calcular Divisor Major    ║ \n" +
+               $"\t\t\t\t\t ║  7 - És un número Primer?      ║ \n" +
+               $"\t\t\t\t\t ║  8 - Nombre de números Primers ║ \n" +
+               $"\t\t\t\t\t ║  q - exit                      ║ \n" +
+               $"\t\t\t\t\t ╚════════════════════════════════╝" +
                $"\n\n" + "Prem el botó per seleccionar la opció desitjada";
 
             return menu;
