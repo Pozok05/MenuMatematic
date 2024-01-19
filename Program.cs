@@ -1,11 +1,13 @@
-﻿namespace MenuMatematic
+﻿using static System.Net.Mime.MediaTypeNames;
+
+namespace MenuMatematic
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-           
-            Console.Write(Menu());
+            
+            
             
 
             
@@ -16,7 +18,7 @@
                 do
                 {
                     Console.Clear();
-                    Console.Write(Menu());
+                    PintarMenu(Menu());
                     opcio = Console.ReadKey().KeyChar;
                 }
                 while (!ValidarOpcio(opcio));
@@ -33,23 +35,56 @@
 
             menu =
 
-               $"\n " +
-               $"\t\t\t\t\t ╔════════════════════════════════╗ \n" +
-               $"\t\t\t\t\t ║       MENÚ MATEMÀTIC           ║ \n" +
-               $"\t\t\t\t\t ╠════════════════════════════════╣ \n" +
-               $"\t\t\t\t\t ║  1 - Calcular valor més gran   ║ \n" +
-               $"\t\t\t\t\t ║  2 - Màxim Comú Divisor        ║ \n" +
-               $"\t\t\t\t\t ║  3 - Mínim Comú Múltiple       ║ \n" +
-               $"\t\t\t\t\t ║  4 - Calcular Factorial        ║ \n" +
-               $"\t\t\t\t\t ║  5 - Calcular Combinatori      ║ \n" +
-               $"\t\t\t\t\t ║  6 - Calcular Divisor Major    ║ \n" +
-               $"\t\t\t\t\t ║  7 - És un número Primer?      ║ \n" +
-               $"\t\t\t\t\t ║  8 - Nombre de números Primers ║ \n" +
-               $"\t\t\t\t\t ║  q - exit                      ║ \n" +
-               $"\t\t\t\t\t ╚════════════════════════════════╝" +
-               $"\n\n" + "\t\t\tPrem la tecla corresponent per seleccionar la opció desitjada:";
+               $"\n╔════════════════════════════════╗\n" +
+               $"║       MENÚ MATEMÀTIC           ║\n" +
+               $"╠════════════════════════════════╣\n" +
+               $"║  1 - Calcular valor més gran   ║\n" +
+               $"║  2 - Màxim Comú Divisor        ║\n" +
+               $"║  3 - Mínim Comú Múltiple       ║\n" +
+               $"║  4 - Calcular Factorial        ║\n" +
+               $"║  5 - Calcular Combinatori      ║\n" +
+               $"║  6 - Calcular Divisor Major    ║\n" +
+               $"║  7 - És un número Primer?      ║\n" +
+               $"║  8 - Nombre de números Primers ║\n" +
+               $"║  q - exit                      ║\n" +
+               $"╚════════════════════════════════╝";
 
             return menu;
+        }
+
+        // Mètode PintarMenu
+        static void PintarMenu(string menu)
+        {
+            string linea = "", text = menu;
+            while (text.Contains("\n"))
+            {
+                linea = text.Substring(0, text.IndexOf("\n"));
+                Centrar(linea);
+                text = text.Substring(text.IndexOf("\n") + 1);
+            }
+            Centrar(text);
+        }
+
+        // Mètode Centrar
+        static void Centrar(string text)
+        {
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.Write(String.Format("{0," + ((Console.WindowWidth / 2) - (text.Length / 2) - 1) + "}", ""));
+            Console.BackgroundColor = ConsoleColor.DarkMagenta;
+            Console.Write(String.Format($"{text}"));
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.WriteLine();
+        }
+
+        // Mètode Pintar
+        static void Pintar(string text)
+        {
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.Write(String.Format("{0," + (text.Length - 1) + "}", ""));
+            Console.BackgroundColor = ConsoleColor.DarkMagenta;
+            Console.Write(String.Format($"{text}"));
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.WriteLine();
         }
 
         // Mètode MostrarOpcio
@@ -60,7 +95,7 @@
             {
                 case '1':
                     //Maxim
-                    Console.WriteLine("\n\t-----MÀXIM-----");
+                    Pintar("\n\t-----MÀXIM-----".PadRight(41, '-'));
                     Console.WriteLine("\t*Retorna el maxim dels dos numeros.\n");
                     a = DemanarValor();
                     b = DemanarValor();
@@ -71,7 +106,7 @@
 
                 case '2':
                     //Mcd
-                    Console.WriteLine("\n\t-----MCD-----");
+                    Pintar("\n\t-----MCD-----".PadRight(41, '-'));
                     Console.WriteLine("\tCalcula el minim comú divisor a partir de dos valors entrats per consola.\n");
                     a = DemanarValor();
                     b = DemanarValor();
@@ -81,7 +116,7 @@
 
                 case '3':
                     //Mcm
-                    Console.WriteLine("\n\t-----MCM-----");
+                    Pintar("\n\t-----MCM-----".PadRight(41, '-'));
                     Console.WriteLine("\tCalcula el Maxim Comú Multiple a partir de dos valors entrats per consola.\n");
                     a = DemanarValor();
                     b = DemanarValor();
@@ -91,7 +126,7 @@
 
                 case '4':
                     //Factorial
-                    Console.WriteLine("\n\t-----FACTORIAL-----");
+                    Pintar("\n\t-----FACTORIAL-----".PadRight(41, '-'));
                     Console.WriteLine("\tCalcula el Facorial a partir d'un valor entrar per consola.\n");
                     a = DemanarValor();
                     Console.WriteLine($"\n\tEl Factorial de {a} és {Factorial(a)}");
@@ -100,7 +135,7 @@
 
                 case '5':
                     //Combinatori
-                    Console.WriteLine($"\n\t-----COMBINATORI-----");
+                    Pintar($"\n\t-----COMBINATORI-----".PadRight(41, '-'));
                     Console.WriteLine($"\tEl programa calcularà el Combinatori entre els dos valors introduïts. " +
                         $"\n\tEs calcularà el combinatori del valor més gran sobre el més petit.\n");
                     a = DemanarValor();
@@ -111,7 +146,7 @@
 
                 case '6':
                     //MostrarDivisorMajor
-                    Console.WriteLine($"\n\t-----MOSTRAR EL DIVISOR MAJOR-----");
+                    Pintar($"\n\t-----MOSTRAR EL DIVISOR MAJOR-----".PadRight(41, '-'));
                     Console.WriteLine($"\tEs mostrarà per pantalla el divisor major del valor introduït.\n");
                     a = DemanarValor();
                     Console.Write($"\n\tEl divisor major de {a} és ");
@@ -121,7 +156,7 @@
 
                 case '7':
                     //EsPrimer
-                    Console.WriteLine($"\n\t-----ÉS UN NÚMERO PRIMER?-----");
+                    Pintar($"\n\t-----ÉS UN NÚMERO PRIMER?-----".PadRight(41, '-'));
                     Console.WriteLine($"\tEl programa dirà si el valor introduït és un NÚMERO PRIMER o no.\n");
                     a = DemanarValor();
                     if (EsPrimer(a)) Console.WriteLine($"\n\t{a} és un número primer");
@@ -131,7 +166,7 @@
 
                 case '8':
                     //NPrimersPrimers
-                    Console.WriteLine($"\n\t-----NÓMBRE DE NÚMEROS PRIMERS-----");
+                    Pintar($"\n\t-----NÓMBRE DE NÚMEROS PRIMERS-----".PadRight(41, '-'));
                     Console.WriteLine($"\tEl valor introduït són els 'x' primers NÚMEROS PRIMERS que vols mostrar per pantalla.\n");
                     a = DemanarValor();
                     Console.Write($"\n\tEls {a} primers números primers són ");
@@ -144,7 +179,7 @@
         // Mètode PremPerContinuar
         static void PremPerContinuar()
         {
-            Console.WriteLine($"\n\n\t-----------------------------------------");
+            Pintar($"\n\n\t-----------------------------------------"); //41 * '-'
             Console.WriteLine($"\tPrem qualsevol botó per tornar al menú...");
             char continuar = Console.ReadKey().KeyChar;
         }
