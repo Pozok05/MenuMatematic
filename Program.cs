@@ -1,4 +1,5 @@
-﻿using static System.Net.Mime.MediaTypeNames;
+﻿using System.ComponentModel;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace MenuMatematic
 {
@@ -6,11 +7,6 @@ namespace MenuMatematic
     {
         static void Main(string[] args)
         {
-            
-            
-            
-
-            
             // MENÚ -> OPCIÓ -> MÈTODE -> OPCIÓ -> MENÚ
             char opcio = '0';
             while (opcio != 'q' && opcio != 'Q') 
@@ -23,11 +19,10 @@ namespace MenuMatematic
                 }
                 while (!ValidarOpcio(opcio));
                 Console.Clear() ;
-                MostrarOpcio(opcio);
-                
-            }
-            
+                MostrarOpcio(opcio);                
+            }            
         }
+
         // Mètode MENU
         static string Menu()
         {
@@ -65,6 +60,18 @@ namespace MenuMatematic
             Centrar(text);
         }
 
+        static void PintarMenu(string menu, char i)
+        {
+            string linea = "", text = menu;
+            while (text.Contains("\n"))
+            {
+                linea = text.Substring(0, text.IndexOf("\n"));
+                Centrar(linea,i);
+                text = text.Substring(text.IndexOf("\n") + 1);
+            }
+            Centrar(text);
+        }
+
         // Mètode Centrar
         static void Centrar(string text)
         {
@@ -73,6 +80,26 @@ namespace MenuMatematic
             Console.BackgroundColor = ConsoleColor.DarkMagenta;
             Console.Write(String.Format($"{text}"));
             Console.BackgroundColor = ConsoleColor.Black;
+            Console.WriteLine();
+        }
+
+        static void Centrar(string text, char i)
+        {
+            string pal = "║";
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.Write(String.Format("{0," + ((Console.WindowWidth / 2) - (text.Length / 2) - 1) + "}", ""));
+            Console.BackgroundColor = ConsoleColor.DarkMagenta;
+            if (text.Contains((i)))
+            {
+                Console.Write('║');
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
+                Console.Write(String.Format($"{text.Substring(1,text.Length-1)}"));
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.Write('║');
+            }
+
+            Console.BackgroundColor = ConsoleColor.Black;
+            
             Console.WriteLine();
         }
 
@@ -87,10 +114,24 @@ namespace MenuMatematic
             Console.WriteLine();
         }
 
+        // Mètode PintarOpcio
+        static void PintarOpcio(string menu,char i)
+        {
+            Console.Clear();
+            string menuMat = Menu();
+            PintarMenu(Menu(),i);
+            Thread.Sleep(100000);
+            Console.Clear();
+
+        }
+
+
         // Mètode MostrarOpcio
         static void MostrarOpcio(int opcio)
         {
             int a, b;
+            char c = (char) opcio;
+            PintarOpcio(Menu(),c);
             switch (opcio)
             {
                 case '1':
